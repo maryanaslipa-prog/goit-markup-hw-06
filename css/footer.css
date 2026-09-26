@@ -1,30 +1,79 @@
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
 }
 
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+}
 .footer .container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 
-.footer-text {
-  max-width: 264px;
-  color: #f4f4fd;
+@media only screen and (min-width: 768px) {
+  .footer .container {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer .container {
+    justify-content: flex-start;
+  }
 }
 
 .footer-left {
-  margin-right: 120px;
+  max-width: 288px;
+  justify-content: center;
 }
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    max-width: 264px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-left {
+    margin-right: 120px;
+  }
+}
+.footer-logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
+.footer-text {
+  color: #f4f4fd;
+}
+
 .footer-socials {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 208px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-socials {
+    align-content: flex-start;
+  }
 }
 .footer-caption {
   margin-bottom: 16px;
   font-weight: 500;
   color: #fff;
+  text-align: center;
 }
+
 .footer-socails-list {
   display: flex;
   gap: 16px;
@@ -62,13 +111,24 @@
 /* Form*/
 .subscribe {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
-
-  flex-direction: column;
-
   margin-left: auto;
 }
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    flex-direction: column;
+
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .subscribe {
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+}
+
 .subscribe-caption {
   font-weight: 500;
   font-size: 16px;
@@ -76,10 +136,24 @@
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-caption {
+    text-align: left;
+  }
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  /* gap: 24px; */
+}
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: row;
+  }
 }
 .footer-form-input {
   border: 1px solid #fff;
