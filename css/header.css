@@ -9,11 +9,6 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 1158px) {
-  .header .container {
-    margin: 0 141px;
-  }
-}
 
 .header .logo {
   display: block;
