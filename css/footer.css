@@ -80,7 +80,11 @@
   color: #fff;
   text-align: center;
 }
-
+@media only screen and (min-width: 768px) {
+  .footer-caption {
+    text-align: left;
+  }
+}
 .footer-socails-list {
   display: flex;
   gap: 16px;
