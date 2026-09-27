@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 0;
 }
 @media only screen and (min-width: 1158px) {
   .header {
@@ -13,23 +14,21 @@
 .header .logo {
   display: block;
   padding: 16px 0;
-
-  @media only screen and (min-width: 768px) {
-    .header .logo {
-      padding: 24px 0;
-    }
-  }
 }
 @media only screen and (min-width: 768px) {
-  .main-nav {
-    margin-left: 120px;
-    margin-right: auto;
+  .header .logo {
+    padding: 24px 0;
   }
 }
+
+.main-nav {
+  margin-left: 120px;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 1158px) {
   .main-nav {
     margin-left: 76px;
-    margin-right: auto;
   }
 }
 
@@ -80,14 +79,13 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .contacts-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 12px;
-  }
+.contacts-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 }
+
 @media only screen and (min-width: 1158px) {
   .contacts-list {
     justify-content: flex-start;
@@ -95,12 +93,11 @@
     gap: 40px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .contacts-item {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-  }
+
+.contacts-item {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 @media only screen and (min-width: 1158px) {

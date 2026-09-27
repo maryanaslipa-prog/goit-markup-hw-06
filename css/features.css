@@ -8,21 +8,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 @media only screen and (min-width: 768px) {
   .features-list {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
   }
 }
 
 .features-item {
   width: 100%;
 }
-.features-item:not(:last-child) {
-  margin-bottom: 72px;
-}
+
 @media only screen and (min-width: 768px) {
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -39,11 +37,6 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .features-wrapper {
-    display: none;
-  }
-}
 @media only screen and (min-width: 1158px) {
   .features-wrapper {
     display: flex;
