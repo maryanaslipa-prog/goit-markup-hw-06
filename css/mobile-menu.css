@@ -79,9 +79,11 @@
   border-color: #404bbf;
   color: #ffffff;
 }
+.mobile-nav {
+  margin-bottom: auto;
+}
 .mobile-menu-list {
   width: 148px;
-  margin-bottom: auto;
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
